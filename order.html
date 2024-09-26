@@ -20,85 +20,130 @@
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg">
+    <header class="bg-white shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.jpeg" alt="Baby Bloom" width="150" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Về Baby Bloom</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">Dịch Vụ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="rewards.html">Baby Bloom Rewards</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="partners.html">Trở Thành Đối Tác</a>
-            </li>
-            <li class="nav-item dropdown">
+        <div class="row align-items-center py-2">
+          <div class="col-md-2 d-flex align-items-center">
+            <!-- Logo -->
+            <img
+              src="./img/logo.jpeg"
+              alt="Baby Bloom Logo"
+              class="img-fluid logo"
+            />
+          </div>
+
+          <div class="col-md-5">
+            <!-- Navigation Links -->
+            <nav class="d-flex">
+              <div class="dropdown me-4">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="aboutDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Về Baby Bloom
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <a class="dropdown-item" href="about.html">Giới thiệu</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Đội ngũ</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="serviceDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dịch vụ
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                  <li><a class="dropdown-item" href="#">Dịch vụ 1</a></li>
+                  <li><a class="dropdown-item" href="#">Dịch vụ 2</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div
+            class="col-md-5 d-flex justify-content-between align-items-center"
+          >
+            <!-- Country Dropdown -->
+            <div class="dropdown me-3">
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                id="countryDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="vietnam-icon"
+                  src="./img/vietnam-icon.png"
+                  alt="Vietnam Flag"
+                />
+                VIỆT NAM
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+
+            <!-- Support Link -->
+            <a href="#" class="text-dark me-3">
+              <i class="fas fa-question-circle"></i> Hỗ trợ
+            </a>
+
+            <!-- User Dropdown -->
+            <div class="dropdown me-3">
               <a
-                class="nav-link dropdown-toggle"
+                class="dropdown-toggle"
                 href="#"
-                id="languageDropdown"
+                id="userDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Ngôn Ngữ
+                <img
+                  src="https://via.placeholder.com/30"
+                  alt="User"
+                  class="rounded-circle"
+                />
+                USER
               </a>
-              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./img/vietnam-icon.png"
-                      alt="Vietnam"
-                      width="20"
-                      height="15"
-                      class="me-2"
-                    />
-                    Tiếng Việt
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./img/english-icon.png"
-                      alt="English"
-                      width="20"
-                      height="15"
-                      class="me-2"
-                    />
-                    English
-                  </a>
-                </li>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="userDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
-            </li>
+            </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">Đăng Ký</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Đăng Nhập</a>
-            </li>
-          </ul>
+            <!-- Notifications Icon -->
+            <a href="#" class="text-dark me-3">
+              <i class="fas fa-bell"></i>
+            </a>
+
+            <!-- Message Icon -->
+            <a href="#" class="text-dark me-3">
+              <i class="fas fa-comments"></i>
+            </a>
+
+            <!-- Menu Icon -->
+            <a href="#" class="text-dark">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </nav>
+    </header>
     <!-- Header -->
     <div
       class="mt-4 container abc"
@@ -185,7 +230,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -195,7 +240,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -205,7 +250,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -215,7 +260,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -225,7 +270,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -235,7 +280,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
             <tr>
               <th scope="row">1</th>
@@ -245,7 +290,7 @@
               <td>Mark</td>
               <td>Otto</td>
               <td>@mdo</td>
-              <td>Mark</td>
+              <td><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
           </tbody>
         </table>
